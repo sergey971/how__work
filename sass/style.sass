@@ -1,0 +1,85 @@
+html
+    font-size: 10px
+body
+    background: #302f2f
+.container
+    max-width: 1070px
+    margin: 0 auto
+    padding: 0 1.5rem
+.column
+    &__body
+        margin-top: 15rem
+        background-color: #fffafa
+        padding: 2rem
+    &__title
+        margin-bottom: 2rem
+        text-align: center
+        color: #dd9a0a
+        text-transform: uppercase
+        font-size: 2rem
+        font-weight: 600
+    &__row
+        display: flex
+        justify-content: center
+        align-items: center
+        column-gap: 2rem
+    &__col
+        height: 400px
+        background-color: #e2dfdf
+        box-shadow: 12px 12px 10px 1px #18181b33
+        flex: 0 1 33.333%
+        position: relative
+        display: flex
+        align-items: flex-end
+        &--road1
+            background-image: url(../image/road1.jpg)
+        &--road2
+            background-image: url(../image/road2.jpg)
+        &--road3
+            background-image: url(../image/road3.jpg)
+
+
+    &__desc
+        transition-property: transform,text-align,background,opacity,color,font-weight,background-color
+        transition-duration: 1s
+        transition-timing-function: linear
+        background-color: #fff
+
+
+    &__col:hover &__desc
+        transform: translateY(-18rem)
+        text-align: center
+        background: #ffffff00
+    &__col:hover &__desc-row
+        margin-bottom: 1rem
+    &__col:hover &__address
+        color: white
+        font-weight: 300
+    &__col:hover &__sub-title
+        background-color: #dd9a0a
+    &__col:hover &__text1
+        color: white
+        font-weight: 300
+    &__col:hover &__text2
+        display: block
+        text-align: center
+        font-weight: 300
+    &__desc-row > :not(:last-child)
+        margin-bottom: 1rem
+    &__address
+        color: #757373
+        font-size: 1.8rem
+    &__sub-title
+        color: #0c0c0c
+        font-size: 2rem
+        font-weight: 600
+    &__body-text
+        font-size: 1.5rem
+    &__text1
+        color: #000
+        font-weight: 400
+    &__text2
+        display: none
+        font-weight: 400
+        color: white
+        margin-top: 0.5rem
